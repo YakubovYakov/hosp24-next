@@ -1,0 +1,88 @@
+.moscow-logo {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #c82e3e;
+  min-height: 48px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.moscow-logo__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+.moscow-logo__logo {
+  background: url("../../../../public/images2/moscow-medecine/logo-moscow-medecine.svg");
+	width: 100%;
+  max-width: 218px;
+  min-height: 28px;
+}
+
+.moscow-logo__button-container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 24px;
+}
+
+.moscow-logo__button-version {
+  border: 0;
+  background: transparent;
+  color: #fff;
+  font-family: "Cera Round", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+	text-decoration: none;
+}
+
+.moscow-logo__button-version::before {
+  margin-right: 8px;
+  content: url("../../../../public/images2/moscow-medecine/eye.svg");
+}
+
+.moscow-logo__button-old-site {
+	border: 0;
+	border: 1px solid #fff;
+	border-radius: 8px;
+	background: transparent;
+	color: #fff;
+	font-family: "Cera Round", sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 100%;
+	cursor: pointer;
+	padding: 8px;
+	text-decoration: none;
+}
+
+@media (max-width: 988px) {
+  .moscow-logo__button-version {
+    display: none;
+  }
+}
+
+@media (max-width: 580px) {
+  .moscow-logo {
+    justify-content: flex-start;
+  }
+
+  .moscow-logo__logo {
+  }
+}
