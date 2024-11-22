@@ -1,5 +1,6 @@
 const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL;
 
+
 export async function fetchDoctors(page = 1, limit = 5) {
   const response = await fetch(
     `${API_BASE_URL}/employers?page=${page}&limit=${limit}`
